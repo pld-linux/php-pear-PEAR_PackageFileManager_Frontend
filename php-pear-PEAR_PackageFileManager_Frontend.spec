@@ -44,16 +44,32 @@ Features:
 
 In PEAR status of this package is: %{_status}.
 
-#%description -l pl
-#...
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+PEAR_PackageFileManager_Frontend zosta³ zaprojektowany aby dzia³aæ
+jako backend ze wszystkimi cechami wymaganym przez frontend taki jak
+Web czy Gtk2.
+
+Mo¿liwo¶ci:
+- zachowywanie i zarz±dzanie wszystkimi b³êdami/ostrze¿eniami poprzez
+  PEAR-owy ErrorStack
+- mo¿liwo¶æ importu/eksportu ustawieñ u¿ytkownika
+- logowanie ca³ej aktywno¶ci frontendu
+- odczytywanie informacji o pakiecie u¿ytkownika przy imporcie przy
+  u¿yciu ogólnego API getDefaults()
+- udostêpnia tak¿e podstawowe metody do pobierania listy maintainerów,
+  plików z rolami i zamiennikami, listy zale¿no¶ci (pakietów,
+  rozszerzeñ) i okre¶lonych ról plików
+- udostêpnia ogóln± klasê wzorców Decorator dla dowolnego frontendu
+  (Web, Gtk2...)
+- dzia³a z PHP 4 i PHP 5.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl):	Testy dla PEAR::%{_pearname}
 Group:		Development
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
 
 %description tests
@@ -82,5 +98,6 @@ fi
 %defattr(644,root,root,755)
 %doc install.log optional-packages.txt docs/%{_pearname}/{examples,ChangeLog,NEWS}
 %{php_pear_dir}/.registry/*.reg
+%dir %{php_pear_dir}/PEAR/PackageFileManager/Frontend
 %{php_pear_dir}/PEAR/PackageFileManager/Frontend/Decorator.php
 %{php_pear_dir}/PEAR/PackageFileManager/Frontend.php
