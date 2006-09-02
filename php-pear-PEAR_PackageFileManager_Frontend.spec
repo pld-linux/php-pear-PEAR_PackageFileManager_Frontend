@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - the singleton-based frontend for user input/output
 Summary(pl):	%{_pearname} - oparty na singletonach frontend do obs³ugi wej¶cia/wyj¶cia
 Name:		php-pear-%{_pearname}
-Version:	0.6.0
+Version:	0.7.0
 Release:	1
 License:	PHP License 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	dcb0c259376e5a484325b89f7ecec66a
+# Source0-md5:	61dabde9fd2506d70177afa581a92cde
 URL:		http://pear.php.net/package/PEAR_PackageFileManager_Frontend/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
