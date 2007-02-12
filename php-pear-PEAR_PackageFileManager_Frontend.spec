@@ -5,7 +5,7 @@
 %define		_pearname	PEAR_PackageFileManager_Frontend
 
 Summary:	%{_pearname} - the singleton-based frontend for user input/output
-Summary(pl):	%{_pearname} - oparty na singletonach frontend do obs³ugi wej¶cia/wyj¶cia
+Summary(pl.UTF-8):   %{_pearname} - oparty na singletonach frontend do obsÅ‚ugi wejÅ›cia/wyjÅ›cia
 Name:		php-pear-%{_pearname}
 Version:	0.7.0
 Release:	2
@@ -44,30 +44,30 @@ Features:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-PEAR_PackageFileManager_Frontend zosta³ zaprojektowany aby dzia³aæ
+%description -l pl.UTF-8
+PEAR_PackageFileManager_Frontend zostaÅ‚ zaprojektowany aby dziaÅ‚aÄ‡
 jako backend ze wszystkimi cechami wymaganym przez frontend taki jak
 Web czy Gtk2.
 
-Mo¿liwo¶ci:
-- zachowywanie i zarz±dzanie wszystkimi b³êdami/ostrze¿eniami poprzez
+MoÅ¼liwoÅ›ci:
+- zachowywanie i zarzÄ…dzanie wszystkimi bÅ‚Ä™dami/ostrzeÅ¼eniami poprzez
   PEAR-owy ErrorStack
-- mo¿liwo¶æ importu/eksportu ustawieñ u¿ytkownika
-- logowanie ca³ej aktywno¶ci frontendu
-- odczytywanie informacji o pakiecie u¿ytkownika przy imporcie przy
-  u¿yciu ogólnego API getDefaults()
-- udostêpnia tak¿e podstawowe metody do pobierania listy maintainerów,
-  plików z rolami i zamiennikami, listy zale¿no¶ci (pakietów,
-  rozszerzeñ) i okre¶lonych ról plików
-- udostêpnia ogóln± klasê wzorców Decorator dla dowolnego frontendu
+- moÅ¼liwoÅ›Ä‡ importu/eksportu ustawieÅ„ uÅ¼ytkownika
+- logowanie caÅ‚ej aktywnoÅ›ci frontendu
+- odczytywanie informacji o pakiecie uÅ¼ytkownika przy imporcie przy
+  uÅ¼yciu ogÃ³lnego API getDefaults()
+- udostÄ™pnia takÅ¼e podstawowe metody do pobierania listy maintainerÃ³w,
+  plikÃ³w z rolami i zamiennikami, listy zaleÅ¼noÅ›ci (pakietÃ³w,
+  rozszerzeÅ„) i okreÅ›lonych rÃ³l plikÃ³w
+- udostÄ™pnia ogÃ³lnÄ… klasÄ™ wzorcÃ³w Decorator dla dowolnego frontendu
   (Web, Gtk2...)
-- dzia³a z PHP 4 i PHP 5.
+- dziaÅ‚a z PHP 4 i PHP 5.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -75,7 +75,7 @@ AutoReq:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
