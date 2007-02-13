@@ -5,7 +5,7 @@
 %define		_pearname	PEAR_PackageFileManager_Frontend
 
 Summary:	%{_pearname} - the singleton-based frontend for user input/output
-Summary(pl.UTF-8):   %{_pearname} - oparty na singletonach frontend do obsługi wejścia/wyjścia
+Summary(pl.UTF-8):	%{_pearname} - oparty na singletonach frontend do obsługi wejścia/wyjścia
 Name:		php-pear-%{_pearname}
 Version:	0.7.0
 Release:	2
@@ -67,7 +67,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
