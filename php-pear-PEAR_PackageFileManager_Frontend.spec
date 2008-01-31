@@ -8,7 +8,7 @@ Summary:	%{_pearname} - the singleton-based frontend for user input/output
 Summary(pl.UTF-8):	%{_pearname} - oparty na singletonach frontend do obsługi wejścia/wyjścia
 Name:		php-pear-%{_pearname}
 Version:	0.7.0
-Release:	2
+Release:	3
 License:	PHP License 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
