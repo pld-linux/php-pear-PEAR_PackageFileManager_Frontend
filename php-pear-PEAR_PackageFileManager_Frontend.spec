@@ -1,14 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		PEAR
-%define		_subclass	PackageFileManager_Frontend
 %define		_status		alpha
 %define		_pearname	PEAR_PackageFileManager_Frontend
-
 Summary:	%{_pearname} - the singleton-based frontend for user input/output
 Summary(pl.UTF-8):	%{_pearname} - oparty na singletonach frontend do obsługi wejścia/wyjścia
 Name:		php-pear-%{_pearname}
 Version:	0.7.0
-Release:	3
+Release:	4
 License:	PHP License 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,8 +14,10 @@ URL:		http://pear.php.net/package/PEAR_PackageFileManager_Frontend/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
-Requires:	php-pear-Config >= 1.10.6
+Requires:	php-pear-Config >= 1.10.7
 Requires:	php-pear-PEAR_PackageFileManager >= 1.6.0-0.b4.1
+Suggests:	php-pear-Log
+Suggests:	php-pear-Var_Dump
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
