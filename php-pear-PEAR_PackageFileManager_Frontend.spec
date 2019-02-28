@@ -4,12 +4,12 @@
 Summary:	%{_pearname} - the singleton-based frontend for user input/output
 Summary(pl.UTF-8):	%{_pearname} - oparty na singletonach frontend do obsługi wejścia/wyjścia
 Name:		php-pear-%{_pearname}
-Version:	0.7.0
-Release:	4
+Version:	0.8.0
+Release:	1
 License:	PHP License 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	61dabde9fd2506d70177afa581a92cde
+# Source0-md5:	284e814868f1f9bed1448545233fb9a9
 URL:		http://pear.php.net/package/PEAR_PackageFileManager_Frontend/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -96,8 +96,9 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc install.log optional-packages.txt docs/%{_pearname}/{examples,ChangeLog,NEWS}
+%doc install.log docs/%{_pearname}/{examples,ChangeLog,NEWS}
 %{php_pear_dir}/.registry/*.reg
 %dir %{php_pear_dir}/PEAR/PackageFileManager/Frontend
 %{php_pear_dir}/PEAR/PackageFileManager/Frontend/Decorator.php
 %{php_pear_dir}/PEAR/PackageFileManager/Frontend.php
+%{php_pear_dir}/data/PEAR_PackageFileManager_Frontend
