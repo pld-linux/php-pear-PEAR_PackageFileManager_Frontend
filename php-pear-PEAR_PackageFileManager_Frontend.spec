@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		alpha
 %define		_pearname	PEAR_PackageFileManager_Frontend
 Summary:	%{_pearname} - the singleton-based frontend for user input/output
